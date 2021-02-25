@@ -1,0 +1,80 @@
+extends layout
+
+block content
+  main.main
+      article.login-wrapper
+        h3 Click on the button to login
+        button.login-btn login
+      article.login-form.form
+        form(action="", method="get")
+          h3
+            i.fas.fa-times.login
+          h1
+            i.fas.fa-user
+            | |login
+          h3 please login with your credentials
+          .label
+            label username
+              span
+                i.fas.fa-user
+            div 
+              span 
+                input(type="text" placeholder="Enter username").input
+          .label
+            label student ID
+              span
+                i.fas.fa-id-card
+            div 
+              span 
+                input(type="text" placeholder="Enter student ID").input
+          .label
+            label password
+              span
+                i.fas.fa-lock
+            div 
+              span 
+                input(type="password" placeholder="Enter password").input
+          .label 
+            input(type="submit", value="login").submit-btn
+          .lead 
+            p Don't have an account 
+              a(href="#").signup-link sign up
+      article.signup-form.form
+        form(action="", method="get")
+          h3
+            i.fas.fa-times
+          h1
+            i.fas.fa-user
+            | +register
+          h3 please sign up with your credentials
+          .label
+            label username
+              span
+                i.fas.fa-user
+            div 
+              span 
+                input(type="text" placeholder="Enter username").input
+          .label
+            label student ID
+              span
+                i.fas.fa-id-card
+            div 
+              span 
+                input(type="text" placeholder="Enter student ID").input
+          .label
+            label password
+              span
+                i.fas.fa-lock
+            div 
+              span 
+                input(type="password" placeholder="Enter password").input
+          .label 
+            input(type="submit" value="register").submit-btn
+          .lead 
+            p Already have an account 
+              a(href="#").login-link login up
+
+  footer
+    p All copyright reserved CSS 
+      span.date 2020
+    
